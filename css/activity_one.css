@@ -1,0 +1,122 @@
+#nav,#section,#aside{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 160px;
+}
+#nav{
+    padding-top:70px;
+}
+/*****section*************/
+#section .lf_list{
+    margin:25px 0 0 0;
+    float:left;
+}
+#section .left_list{
+    width:260px;
+    height:180px;
+    border:1px solid #ff9fdc;
+    background:#fff;
+    border-radius:5px 5px 0 0;
+}
+#section .left_list h3{
+    height:30px;
+    background:#ff9fdc;
+    line-height:30px;
+    padding-left:10px;
+}
+#section .left_list ul li{
+    border-bottom:1px solid #ddd;
+    height:50px;
+    margin:0 10px;
+    font-size:14px;
+    line-height:65px;
+    width:260px;
+    float:left;
+}
+#section .left_list ul li:last-child{
+    border-bottom:none;
+}
+#section .left_list ul li a,
+#section .section_main li a:hover{
+    color:#666;
+}
+#section .left_list ul .curren{
+    color:#333;
+    font-weight:bold;
+}
+#section .left_list_t{
+    width:260px;
+    height:180px;
+    border:1px solid #ff9fdc;
+    background:#fff;
+    border-radius:5px 5px 0 0;
+    margin:30px 0;
+}
+#section .left_list_t h3,#section  .section_nav{
+    height:30px;
+    background:#ff9fdc;
+    line-height:30px;
+    padding-left:10px;
+}
+#section .left_list_t ul li{
+    margin:18px 10px;
+}
+#section .section_right{
+    margin: 25px 0 0 25px;
+    border:1px solid #ff9fdc;
+    width:710px;
+    height:430px;
+    float:right;
+    border-radius:5px 5px 0 0;
+}
+#section  .section_nav li{
+    float:left;
+    margin-right:10px;
+}
+
+#section .section_main li{
+    border-bottom:1px dashed #ddd;
+    margin:48px;
+}
+#section .section_main span{
+    float:right;
+}
+#section .section_main li a{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+#section .section_main p{
+    margin:8px 0;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    width:86%;
+}
+#section .section_main li b{
+    width:8px;
+    height:8px;
+    border:1px solid #ff9fdc;
+    border-radius:8px;
+    display:inline-block;
+    background:#ff9fdc;
+    margin:0 5px 0 0;
+}
+/*响应布局*/
+@media(max-width:960px)
+{
+    #nav, #section, #aside {
+        padding:70px 10px 0 10px; 
+    }
+    #section{padding:10px 10px 0 10px; }
+    #section .section_right{
+        width:100%;
+        float: none;
+        height:auto;
+        margin:0 0 10px 0;
+    }
+    #section .left_list ul {float: none;}
+    #section .left_list ul li{width:100%;padding:0 10px;margin:0;}
+    #section .left_list,#section .left_list_t{width:100%;}
+    #section .lf_list{float:none;margin:0;width:100%;}
+}
